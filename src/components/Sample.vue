@@ -29,7 +29,7 @@
         //https://api.ihaohaoxuexi.com/learning_fe/light/invoke/pkuArticles?page=8
         axios.get(this.inputStr+this.page)
           .then(res => {
-            this.htmlRes = res.data.data.list[0].content;
+            this.htmlRes = res.data.date.list[0].content;
             // this.htmlRes = res;
             this.htmlShow = true;
           })
@@ -42,7 +42,7 @@
         this.page++;
         axios.get(this.inputStr+this.page)
           .then(res => {
-            this.htmlRes = res.data.data.list[0].content;
+            this.htmlRes = res.data.date.list[0].content;
             this.htmlShow = true;
           })
 

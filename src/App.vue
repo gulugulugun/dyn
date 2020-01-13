@@ -1,7 +1,11 @@
 <template>
     <div id="app">
-        <sample></sample>
-        <example></example>
+<!--        <sample></sample>-->
+<!--        <example></example>-->
+<!--        <my-date></my-date>-->
+<!--        <login></login>-->
+<!--        <nav-menu></nav-menu>-->
+        <router-view></router-view>
     </div>
 </template>
 
@@ -30,8 +34,11 @@
 <script>
   import Sample from "@/components/Sample";
   import Example from "@/components/Example";
+  import MyDate from "./components/myDate";
+  import NavMenu from "./components/navMenu";
+  import Login from "./components/Login";
 
   export default {
-    components: {Example, Sample}
+      components: {NavMenu,Login, MyDate, Example, Sample}
   }
 </script>
